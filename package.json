@@ -1,0 +1,36 @@
+{
+  "name": "paqs",
+  "version": "1.0.0",
+  "description": "A minuscule library to parse query-strings",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codematix/paqs.git"
+  },
+  "keywords": [
+    "isomorphic",
+    "querystring",
+    "query-string",
+    "parser",
+    "javascript"
+  ],
+  "author": "intuitivcloud Engineering <engineering@intuitivcloud.com>",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/codematix/paqs/issues"
+  },
+  "homepage": "https://github.com/codematix/paqs#readme",
+  "devDependencies": {
+    "expect.js": "^0.3.1",
+    "gulp": "^3.9.0",
+    "gulp-eslint": "^0.13.2",
+    "gulp-load-plugins": "^1.0.0-rc.1",
+    "gulp-mocha": "^2.1.1",
+    "gulp-util": "^3.0.5",
+    "node-libs-browser": "^0.5.2",
+    "webpack": "^1.9.10"
+  }
+}
