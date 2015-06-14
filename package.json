@@ -1,7 +1,7 @@
 {
   "name": "paqs",
-  "version": "1.0.0",
-  "description": "A minuscule library to parse query-strings",
+  "version": "1.0.1",
+  "description": "A minuscule isomorphic library to parse query-strings",
   "main": "index.js",
   "scripts": {
     "test": "gulp build"
