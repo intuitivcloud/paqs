@@ -1,42 +1,14 @@
-/* global describe, it, before */
+/* global describe, it */
 'use strict';
 
-var path = require('path'),
-    fs = require('fs'),
-    expect = require('expect.js'),
-    jsdom = require('jsdom');
+var expect = require('expect.js'),
+    paqs = require('../');
 
 var context = describe;
 
-function doInBrowser(workTodo) {
-  var paqs = fs.readFileSync(path.join(__dirname, '../dist/paqs.js'));
-
-  jsdom.env({
-    html: '<!doctype html><html><head></head><body></body></html>',
-    src: [paqs],
-    done: function (err, window) {
-      if (err) return expect().fail(err);
-      workTodo(window);
-    }
-  });
-}
-
 describe('paqs', function () {
 
-  context('in browser', function () {
-    var paqs;
-
-    before(function (done) {
-      doInBrowser(function (window) {
-        paqs = window.paqs;
-        done();
-      });
-    });
-
-    it('should be defined and be a function', function () {
-      expect(paqs).to.be.ok();
-      expect(paqs).to.be.a('function');
-    });
+  context('on server', function () {
 
     it('should parse query string', function () {
       expect(paqs('foo=bar')).to.be.eql({foo: 'bar'});
