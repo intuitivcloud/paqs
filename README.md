@@ -1,5 +1,5 @@
 # paqs
-A minuscule library to parse query-strings
+A minuscule isomorphic library to parse query-strings
 
 [![npm Version](https://img.shields.io/npm/v/paqs.svg)](https://www.npmjs.com/package/paqs)
 [![Build Status](https://travis-ci.org/intuitivcloud/paqs.svg)](https://travis-ci.org/intuitivcloud/paqs)
